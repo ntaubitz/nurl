@@ -1,4 +1,7 @@
+
+
 # This would actually be a SqlAlchemy Model
+# that could also be pickled and cached in Redis
 class NUrl(object):
     # i.e.
     # __tablename__ = 'users'

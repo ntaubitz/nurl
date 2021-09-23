@@ -16,7 +16,7 @@ def get_shorten():
 
 @app.route('/redirect')
 def get_redirect():
-    return NUrlRepository.get_instance().get_by_original(request.args.get('nurl')).original_url
+    return NUrlRepository.get_instance().get_by_shortened(request.args.get('nurl')).original_url
 
 
 if __name__ == '__main__':
